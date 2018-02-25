@@ -22,12 +22,12 @@ def scan(d):
 			except OSError:
 				pass
 
-	fi = open("biggest_file.txt", "w+")
+	#fi = open("biggest_file.txt", "w+")
 
 	print "Top 10 Files in", d
 	
 	for index, i in enumerate(top_10, 1):
-		fi.write("{}.\t{} -> {}\n\n".format(index, i[1], size_of(i[0])))
+		#fi.write("{}.\t{} -> {}\n\n".format(index, i[1], size_of(i[0])))
 		print i[1], "->", size_of(i[0])
 	fi.close()
 
